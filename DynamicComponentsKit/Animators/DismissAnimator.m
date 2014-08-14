@@ -23,8 +23,6 @@
         toView.transform = CGAffineTransformMakeScale(0.9, 0.9);
         
         CGPoint mainViewCenter = CGPointMake(modalFromViewController.mainView.center.x, modalFromViewController.mainView.center.y + modalFromViewController.view.frame.size.height);
-
-        [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
         
         [UIView animateWithDuration:self.duration delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             toView.transform = CGAffineTransformMakeScale(1.0, 1.0);

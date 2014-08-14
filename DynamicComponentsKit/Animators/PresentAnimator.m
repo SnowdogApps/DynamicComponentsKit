@@ -26,8 +26,6 @@
         
         CGPoint mainViewCenter = modalToViewController.mainView.center;
         modalToViewController.mainView.center = CGPointMake(mainViewCenter.x, mainViewCenter.y - modalToViewController.mainView.frame.size.height);
-
-        [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
         
         [UIView animateWithDuration:self.duration delay:0 usingSpringWithDamping:0.75 initialSpringVelocity:1.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             fromView.transform = CGAffineTransformMakeScale(0.9, 0.9);
