@@ -121,9 +121,9 @@
 		BF944838199CC36B005B4AC1 /* DynamicComponentsKit */ = {
 			isa = PBXGroup;
 			children = (
+				BF94485F199CC3C8005B4AC1 /* Animators */,
 				BF944872199CC3EA005B4AC1 /* Categories */,
 				BF944879199CC3EA005B4AC1 /* Controllers */,
-				BF94485F199CC3C8005B4AC1 /* Animators */,
 				BF94483D199CC36B005B4AC1 /* AppDelegate.h */,
 				BF94483E199CC36B005B4AC1 /* AppDelegate.m */,
 				BF944840199CC36B005B4AC1 /* FirstViewController.h */,

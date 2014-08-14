@@ -14,20 +14,9 @@
 
 @implementation ModalViewController
 
-- (void)viewDidLayoutSubviews
-{
-    [super viewDidLayoutSubviews];
-    [self setNeedsStatusBarAppearanceUpdate];
-}
-
 - (IBAction)unwindSelf:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleLightContent;
 }
 
 @end
