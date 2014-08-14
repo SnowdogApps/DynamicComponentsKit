@@ -9,19 +9,9 @@
 #import "BaseViewController.h"
 
 @interface BaseViewController ()
-@property (nonatomic, strong) UIPercentDrivenInteractiveTransition *interactivePopTransitionController;
 @end
 
 @implementation BaseViewController
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    UIScreenEdgePanGestureRecognizer *recognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePopGesture:)];
-    recognizer.edges = UIRectEdgeLeft;
-    [self.view addGestureRecognizer:recognizer];
-}
 
 - (void)viewDidAppear:(BOOL)animated
 {

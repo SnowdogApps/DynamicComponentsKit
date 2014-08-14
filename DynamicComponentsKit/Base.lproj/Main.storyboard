@@ -21,18 +21,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items/>
                             </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThS-Lg-zg8">
-                                <rect key="frame" x="140" y="233" width="35" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThS-Lg-zg8">
+                                <rect key="frame" x="140" y="234" width="35" height="30"/>
                                 <state key="normal" title="Push">
+                                    <color key="titleColor" red="0.0" green="0.7861528512" blue="0.90302136479999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="0ux-fR-cC8" kind="show" id="iDc-1q-Kfp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5p-68-1Ma">
-                                <rect key="frame" x="134" y="304" width="53" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5p-68-1Ma">
+                                <rect key="frame" x="134" y="305" width="53" height="30"/>
                                 <state key="normal" title="Present">
+                                    <color key="titleColor" red="0.0" green="0.7861528512" blue="0.90302136479999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -51,7 +53,7 @@
                             <constraint firstAttribute="centerY" secondItem="h5p-68-1Ma" secondAttribute="centerY" constant="-35" id="qHn-CW-fXe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="QLC-rI-Sa2"/>
+                    <navigationItem key="navigationItem" title="Transitions" id="QLC-rI-Sa2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,15 +71,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XK4-lg-1m0">
+                            <visualEffectView opaque="NO" alpha="0.49999999999999961" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XK4-lg-1m0">
                                 <rect key="frame" x="0.0" y="-5" width="320" height="573"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="7aw-mv-ZtN">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="573"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <blurEffect style="light"/>
+                                <blurEffect style="dark"/>
                             </visualEffectView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ADx-cD-3q7" userLabel="Main View">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ADx-cD-3q7" userLabel="Main View" customClass="ShadowView">
                                 <rect key="frame" x="36" y="60" width="248" height="468"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modal View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOU-ma-K10">
@@ -86,23 +88,37 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f57-cW-RFr">
-                                        <rect key="frame" x="97" y="283" width="54" height="30"/>
-                                        <state key="normal" title="Dismiss">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="unwindSelf:" destination="l3m-W5-tC4" eventType="touchUpInside" id="wxb-SQ-kjq"/>
-                                        </connections>
-                                    </button>
+                                    <navigationBar clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DXx-fG-qOy">
+                                        <rect key="frame" x="0.0" y="0.0" width="248" height="44"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="barTintColor" red="0.0" green="0.7861528512" blue="0.90302136479999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <textAttributes key="titleTextAttributes">
+                                            <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </textAttributes>
+                                        <items>
+                                            <navigationItem title="Modal" id="rye-0a-Yxd">
+                                                <barButtonItem key="leftBarButtonItem" title="Dismiss" id="0bu-ex-Nfi">
+                                                    <connections>
+                                                        <action selector="unwindSelf:" destination="l3m-W5-tC4" id="1Hv-20-DZU"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </navigationBar>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="centerY" secondItem="VOU-ma-K10" secondAttribute="centerY" constant="0.5" id="231-en-2Gg"/>
-                                    <constraint firstItem="f57-cW-RFr" firstAttribute="top" secondItem="VOU-ma-K10" secondAttribute="bottom" constant="28" id="6qE-3o-8rU"/>
-                                    <constraint firstAttribute="centerX" secondItem="f57-cW-RFr" secondAttribute="centerX" id="SjV-dE-fu2"/>
                                     <constraint firstAttribute="centerX" secondItem="VOU-ma-K10" secondAttribute="centerX" id="fMb-A4-Ccj"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -125,17 +141,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zzi-HW-Kkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1809" y="50"/>
+            <point key="canvasLocation" x="2341" y="50"/>
         </scene>
-        <!--Base View Controller-->
+        <!--Navigation Base View Controller-->
         <scene sceneID="1w9-dZ-usy">
             <objects>
-                <viewController id="0ux-fR-cC8" customClass="BaseViewController" sceneMemberID="viewController">
+                <viewController id="0ux-fR-cC8" customClass="NavigationBaseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="knt-Qp-dVQ"/>
                         <viewControllerLayoutGuide type="bottom" id="WdK-Nj-ma3"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Yht-x9-kRy">
+                    <view key="view" contentMode="scaleToFill" id="Yht-x9-kRy" customClass="ShadowView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -202,11 +218,11 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Components" image="second" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" title="Components" id="ahR-U8-coc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="330"/>
+            <point key="canvasLocation" x="1282" y="330"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -222,10 +238,12 @@
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.7861528512" blue="0.90302136479999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.7861528512" blue="0.90302136479999995" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="R1G-ld-jWj" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="nNw-mR-nYs" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -248,6 +266,9 @@
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="g3i-I0-qTz">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="view.backgroundColor">
                             <color key="value" red="0.70980392156862748" green="0.70980392156862748" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
@@ -260,6 +281,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XFV-kO-DCp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-293"/>
+        </scene>
+        <!--Components-->
+        <scene sceneID="iTZ-SE-xzn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nNw-mR-nYs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Components" image="second" id="cPa-gy-q4n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pqW-3B-iEI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="barTintColor" red="0.0" green="0.7861528512" blue="0.90302136479999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="CYG-oI-qga"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O2T-Pr-EbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="330"/>
         </scene>
     </scenes>
     <resources>

@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "UIViewController+NavigationInteractivePopGesture.h"
 
 @interface NavigationBaseViewController : BaseViewController
 

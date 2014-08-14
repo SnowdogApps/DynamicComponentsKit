@@ -9,16 +9,23 @@
 #import "NavigationBaseViewController.h"
 
 @interface NavigationBaseViewController ()
-
+@property (nonatomic, strong) UIPercentDrivenInteractiveTransition *interactivePopTransitionController;
 @end
 
 @implementation NavigationBaseViewController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    UIScreenEdgePanGestureRecognizer *recognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePopGesture:)];
+    recognizer.edges = UIRectEdgeLeft;
+    [self.view addGestureRecognizer:recognizer];
+}
 
 - (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
                          interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController
 {
     if ([animationController isKindOfClass:[PopAnimator class]]) {
-        self.interactivePopTransitionController = [[UIPercentDrivenInteractiveTransition alloc] init];
         return self.interactivePopTransitionController;
     }
     

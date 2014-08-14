@@ -7,10 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PushAnimator.h"
-#import "PopAnimator.h"
-
-#import "UIViewController+NavigationInteractivePopGesture.h"
 #import "UIViewController+NavigationTransitionDelegate.h"
 
 @interface BaseViewController : UIViewController

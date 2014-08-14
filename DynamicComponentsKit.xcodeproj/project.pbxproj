@@ -27,6 +27,7 @@
 		BF944884199CC3EA005B4AC1 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF94487D199CC3EA005B4AC1 /* ModalViewController.m */; };
 		BF944885199CC3EA005B4AC1 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF94487F199CC3EA005B4AC1 /* TabBarController.m */; };
 		BF944888199CC82D005B4AC1 /* NavigationBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF944887199CC82D005B4AC1 /* NavigationBaseViewController.m */; };
+		BF94488C199CF0D4005B4AC1 /* ShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF94488B199CF0D4005B4AC1 /* ShadowView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		BF94487F199CC3EA005B4AC1 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		BF944886199CC82D005B4AC1 /* NavigationBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBaseViewController.h; sourceTree = "<group>"; };
 		BF944887199CC82D005B4AC1 /* NavigationBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBaseViewController.m; sourceTree = "<group>"; };
+		BF94488A199CF0D4005B4AC1 /* ShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowView.h; sourceTree = "<group>"; };
+		BF94488B199CF0D4005B4AC1 /* ShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadowView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,7 @@
 				BF94485F199CC3C8005B4AC1 /* Animators */,
 				BF944872199CC3EA005B4AC1 /* Categories */,
 				BF944879199CC3EA005B4AC1 /* Controllers */,
+				BF944889199CF0A7005B4AC1 /* Views */,
 				BF94483D199CC36B005B4AC1 /* AppDelegate.h */,
 				BF94483E199CC36B005B4AC1 /* AppDelegate.m */,
 				BF944840199CC36B005B4AC1 /* FirstViewController.h */,
@@ -208,6 +212,15 @@
 				BF944887199CC82D005B4AC1 /* NavigationBaseViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BF944889199CF0A7005B4AC1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF94488A199CF0D4005B4AC1 /* ShadowView.h */,
+				BF94488B199CF0D4005B4AC1 /* ShadowView.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF94488C199CF0D4005B4AC1 /* ShadowView.m in Sources */,
 				BF944871199CC3C8005B4AC1 /* TabChangeAnimator.m in Sources */,
 				BF944888199CC82D005B4AC1 /* NavigationBaseViewController.m in Sources */,
 				BF944881199CC3EA005B4AC1 /* UIViewController+NavigationInteractivePopGesture.m in Sources */,
@@ -441,6 +455,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = DynamicComponentsKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -452,6 +467,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = DynamicComponentsKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
