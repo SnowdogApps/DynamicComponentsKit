@@ -15,7 +15,7 @@
     UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
-    UIView *toView = [self parentViewInController:toViewController];
+    UIView *toView = [toViewController topRootView];
     
     if ([fromViewController isKindOfClass:[ModalViewController class]]) {
         ModalViewController *modalFromViewController = (ModalViewController *)fromViewController;

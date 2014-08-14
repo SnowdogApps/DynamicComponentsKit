@@ -19,7 +19,7 @@
     if ([toViewController isKindOfClass:[ModalViewController class]]) {
         ModalViewController *modalToViewController = (ModalViewController *)toViewController;
         
-        UIView *fromView = [self parentViewInController:fromViewController];
+        UIView *fromView = [fromViewController topRootView];
         
         CGFloat blurAlpha = modalToViewController.blurView.alpha;
         modalToViewController.blurView.alpha = 0.0;
