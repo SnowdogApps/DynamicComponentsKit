@@ -9,7 +9,7 @@
 #import "NavigationBaseViewController.h"
 
 @interface NavigationBaseViewController ()
-
+@property (nonatomic, getter=isInteractive) BOOL interactive;
 @end
 
 @implementation NavigationBaseViewController
@@ -26,7 +26,7 @@
 - (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
                          interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController
 {
-    if ([animationController isKindOfClass:[PopAnimator class]]) {
+    if (self.isInteractive && [animationController isKindOfClass:[PopAnimator class]]) {
         self.interactivePopTransitionController = [[UIPercentDrivenInteractiveTransition alloc] init];
         return self.interactivePopTransitionController;
     }
