@@ -42,15 +42,4 @@
     NSAssert(NO, @"-animateTranstion: not implemented");
 }
 
-- (UIView *)parentViewInController:(UIViewController *)controller
-{
-    if (controller.tabBarController != nil) {
-        return controller.tabBarController.view;
-    } else if (controller.navigationController != nil) {
-        return controller.navigationController.view;
-    } else {
-        return controller.view;
-    }
-}
-
 @end
