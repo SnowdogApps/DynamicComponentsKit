@@ -26,6 +26,7 @@
 		BF944883199CC3EA005B4AC1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF94487B199CC3EA005B4AC1 /* BaseViewController.m */; };
 		BF944884199CC3EA005B4AC1 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF94487D199CC3EA005B4AC1 /* ModalViewController.m */; };
 		BF944885199CC3EA005B4AC1 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF94487F199CC3EA005B4AC1 /* TabBarController.m */; };
+		BF944888199CC82D005B4AC1 /* NavigationBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF944887199CC82D005B4AC1 /* NavigationBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		BF94487D199CC3EA005B4AC1 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 		BF94487E199CC3EA005B4AC1 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		BF94487F199CC3EA005B4AC1 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		BF944886199CC82D005B4AC1 /* NavigationBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBaseViewController.h; sourceTree = "<group>"; };
+		BF944887199CC82D005B4AC1 /* NavigationBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +204,8 @@
 				BF94487D199CC3EA005B4AC1 /* ModalViewController.m */,
 				BF94487E199CC3EA005B4AC1 /* TabBarController.h */,
 				BF94487F199CC3EA005B4AC1 /* TabBarController.m */,
+				BF944886199CC82D005B4AC1 /* NavigationBaseViewController.h */,
+				BF944887199CC82D005B4AC1 /* NavigationBaseViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF944871199CC3C8005B4AC1 /* TabChangeAnimator.m in Sources */,
+				BF944888199CC82D005B4AC1 /* NavigationBaseViewController.m in Sources */,
 				BF944881199CC3EA005B4AC1 /* UIViewController+NavigationInteractivePopGesture.m in Sources */,
 				BF944884199CC3EA005B4AC1 /* ModalViewController.m in Sources */,
 				BF94486F199CC3C8005B4AC1 /* PresentAnimator.m in Sources */,

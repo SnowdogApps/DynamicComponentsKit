@@ -10,4 +10,9 @@
 
 @implementation AppDelegate
 
+- (void)applicationDidFinishLaunching:(UIApplication *)application
+{
+    application.statusBarStyle = UIStatusBarStyleLightContent;
+}
+
 @end
