@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF94483C199CC36B005B4AC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF94483B199CC36B005B4AC1 /* main.m */; };
+		BF94483F199CC36B005B4AC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF94483E199CC36B005B4AC1 /* AppDelegate.m */; };
+		BF944842199CC36B005B4AC1 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF944841199CC36B005B4AC1 /* FirstViewController.m */; };
+		BF944845199CC36B005B4AC1 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF944844199CC36B005B4AC1 /* SecondViewController.m */; };
+		BF944848199CC36B005B4AC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF944846199CC36B005B4AC1 /* Main.storyboard */; };
+		BF94484A199CC36B005B4AC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF944849199CC36B005B4AC1 /* Images.xcassets */; };
+		BF944856199CC36B005B4AC1 /* DynamicComponentsKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF944855199CC36B005B4AC1 /* DynamicComponentsKitTests.m */; };
+		BF94486C199CC3C8005B4AC1 /* DismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF944861199CC3C8005B4AC1 /* DismissAnimator.m */; };
+		BF94486D199CC3C8005B4AC1 /* NavigationAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF944863199CC3C8005B4AC1 /* NavigationAnimator.m */; };
+		BF94486E199CC3C8005B4AC1 /* PopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF944865199CC3C8005B4AC1 /* PopAnimator.m */; };
+		BF94486F199CC3C8005B4AC1 /* PresentAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF944867199CC3C8005B4AC1 /* PresentAnimator.m */; };
+		BF944870199CC3C8005B4AC1 /* PushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF944869199CC3C8005B4AC1 /* PushAnimator.m */; };
+		BF944871199CC3C8005B4AC1 /* TabChangeAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF94486B199CC3C8005B4AC1 /* TabChangeAnimator.m */; };
+		BF944880199CC3EA005B4AC1 /* UIViewController+ModalTransitioningDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF944874199CC3EA005B4AC1 /* UIViewController+ModalTransitioningDelegate.m */; };
+		BF944881199CC3EA005B4AC1 /* UIViewController+NavigationInteractivePopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = BF944876199CC3EA005B4AC1 /* UIViewController+NavigationInteractivePopGesture.m */; };
+		BF944882199CC3EA005B4AC1 /* UIViewController+NavigationTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF944878199CC3EA005B4AC1 /* UIViewController+NavigationTransitionDelegate.m */; };
+		BF944883199CC3EA005B4AC1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF94487B199CC3EA005B4AC1 /* BaseViewController.m */; };
+		BF944884199CC3EA005B4AC1 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF94487D199CC3EA005B4AC1 /* ModalViewController.m */; };
+		BF944885199CC3EA005B4AC1 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF94487F199CC3EA005B4AC1 /* TabBarController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF944850199CC36B005B4AC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF94482E199CC36B005B4AC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF944835199CC36B005B4AC1;
+			remoteInfo = DynamicComponentsKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF944836199CC36B005B4AC1 /* DynamicComponentsKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicComponentsKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF94483A199CC36B005B4AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF94483B199CC36B005B4AC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF94483D199CC36B005B4AC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF94483E199CC36B005B4AC1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF944840199CC36B005B4AC1 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		BF944841199CC36B005B4AC1 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		BF944843199CC36B005B4AC1 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		BF944844199CC36B005B4AC1 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		BF944847199CC36B005B4AC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF944849199CC36B005B4AC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BF94484F199CC36B005B4AC1 /* DynamicComponentsKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicComponentsKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF944854199CC36B005B4AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF944855199CC36B005B4AC1 /* DynamicComponentsKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicComponentsKitTests.m; sourceTree = "<group>"; };
+		BF944860199CC3C8005B4AC1 /* DismissAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissAnimator.h; sourceTree = "<group>"; };
+		BF944861199CC3C8005B4AC1 /* DismissAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissAnimator.m; sourceTree = "<group>"; };
+		BF944862199CC3C8005B4AC1 /* NavigationAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationAnimator.h; sourceTree = "<group>"; };
+		BF944863199CC3C8005B4AC1 /* NavigationAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationAnimator.m; sourceTree = "<group>"; };
+		BF944864199CC3C8005B4AC1 /* PopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopAnimator.h; sourceTree = "<group>"; };
+		BF944865199CC3C8005B4AC1 /* PopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopAnimator.m; sourceTree = "<group>"; };
+		BF944866199CC3C8005B4AC1 /* PresentAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentAnimator.h; sourceTree = "<group>"; };
+		BF944867199CC3C8005B4AC1 /* PresentAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentAnimator.m; sourceTree = "<group>"; };
+		BF944868199CC3C8005B4AC1 /* PushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushAnimator.h; sourceTree = "<group>"; };
+		BF944869199CC3C8005B4AC1 /* PushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushAnimator.m; sourceTree = "<group>"; };
+		BF94486A199CC3C8005B4AC1 /* TabChangeAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabChangeAnimator.h; sourceTree = "<group>"; };
+		BF94486B199CC3C8005B4AC1 /* TabChangeAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabChangeAnimator.m; sourceTree = "<group>"; };
+		BF944873199CC3EA005B4AC1 /* UIViewController+ModalTransitioningDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ModalTransitioningDelegate.h"; sourceTree = "<group>"; };
+		BF944874199CC3EA005B4AC1 /* UIViewController+ModalTransitioningDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ModalTransitioningDelegate.m"; sourceTree = "<group>"; };
+		BF944875199CC3EA005B4AC1 /* UIViewController+NavigationInteractivePopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationInteractivePopGesture.h"; sourceTree = "<group>"; };
+		BF944876199CC3EA005B4AC1 /* UIViewController+NavigationInteractivePopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationInteractivePopGesture.m"; sourceTree = "<group>"; };
+		BF944877199CC3EA005B4AC1 /* UIViewController+NavigationTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationTransitionDelegate.h"; sourceTree = "<group>"; };
+		BF944878199CC3EA005B4AC1 /* UIViewController+NavigationTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationTransitionDelegate.m"; sourceTree = "<group>"; };
+		BF94487A199CC3EA005B4AC1 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		BF94487B199CC3EA005B4AC1 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		BF94487C199CC3EA005B4AC1 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		BF94487D199CC3EA005B4AC1 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		BF94487E199CC3EA005B4AC1 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		BF94487F199CC3EA005B4AC1 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF944833199CC36B005B4AC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF94484C199CC36B005B4AC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF94482D199CC36B005B4AC1 = {
+			isa = PBXGroup;
+			children = (
+				BF944838199CC36B005B4AC1 /* DynamicComponentsKit */,
+				BF944852199CC36B005B4AC1 /* DynamicComponentsKitTests */,
+				BF944837199CC36B005B4AC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF944837199CC36B005B4AC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF944836199CC36B005B4AC1 /* DynamicComponentsKit.app */,
+				BF94484F199CC36B005B4AC1 /* DynamicComponentsKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF944838199CC36B005B4AC1 /* DynamicComponentsKit */ = {
+			isa = PBXGroup;
+			children = (
+				BF944872199CC3EA005B4AC1 /* Categories */,
+				BF944879199CC3EA005B4AC1 /* Controllers */,
+				BF94485F199CC3C8005B4AC1 /* Animators */,
+				BF94483D199CC36B005B4AC1 /* AppDelegate.h */,
+				BF94483E199CC36B005B4AC1 /* AppDelegate.m */,
+				BF944840199CC36B005B4AC1 /* FirstViewController.h */,
+				BF944841199CC36B005B4AC1 /* FirstViewController.m */,
+				BF944843199CC36B005B4AC1 /* SecondViewController.h */,
+				BF944844199CC36B005B4AC1 /* SecondViewController.m */,
+				BF944846199CC36B005B4AC1 /* Main.storyboard */,
+				BF944849199CC36B005B4AC1 /* Images.xcassets */,
+				BF944839199CC36B005B4AC1 /* Supporting Files */,
+			);
+			path = DynamicComponentsKit;
+			sourceTree = "<group>";
+		};
+		BF944839199CC36B005B4AC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF94483A199CC36B005B4AC1 /* Info.plist */,
+				BF94483B199CC36B005B4AC1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF944852199CC36B005B4AC1 /* DynamicComponentsKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF944855199CC36B005B4AC1 /* DynamicComponentsKitTests.m */,
+				BF944853199CC36B005B4AC1 /* Supporting Files */,
+			);
+			path = DynamicComponentsKitTests;
+			sourceTree = "<group>";
+		};
+		BF944853199CC36B005B4AC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF944854199CC36B005B4AC1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF94485F199CC3C8005B4AC1 /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				BF944860199CC3C8005B4AC1 /* DismissAnimator.h */,
+				BF944861199CC3C8005B4AC1 /* DismissAnimator.m */,
+				BF944862199CC3C8005B4AC1 /* NavigationAnimator.h */,
+				BF944863199CC3C8005B4AC1 /* NavigationAnimator.m */,
+				BF944864199CC3C8005B4AC1 /* PopAnimator.h */,
+				BF944865199CC3C8005B4AC1 /* PopAnimator.m */,
+				BF944866199CC3C8005B4AC1 /* PresentAnimator.h */,
+				BF944867199CC3C8005B4AC1 /* PresentAnimator.m */,
+				BF944868199CC3C8005B4AC1 /* PushAnimator.h */,
+				BF944869199CC3C8005B4AC1 /* PushAnimator.m */,
+				BF94486A199CC3C8005B4AC1 /* TabChangeAnimator.h */,
+				BF94486B199CC3C8005B4AC1 /* TabChangeAnimator.m */,
+			);
+			path = Animators;
+			sourceTree = "<group>";
+		};
+		BF944872199CC3EA005B4AC1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BF944873199CC3EA005B4AC1 /* UIViewController+ModalTransitioningDelegate.h */,
+				BF944874199CC3EA005B4AC1 /* UIViewController+ModalTransitioningDelegate.m */,
+				BF944875199CC3EA005B4AC1 /* UIViewController+NavigationInteractivePopGesture.h */,
+				BF944876199CC3EA005B4AC1 /* UIViewController+NavigationInteractivePopGesture.m */,
+				BF944877199CC3EA005B4AC1 /* UIViewController+NavigationTransitionDelegate.h */,
+				BF944878199CC3EA005B4AC1 /* UIViewController+NavigationTransitionDelegate.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		BF944879199CC3EA005B4AC1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF94487A199CC3EA005B4AC1 /* BaseViewController.h */,
+				BF94487B199CC3EA005B4AC1 /* BaseViewController.m */,
+				BF94487C199CC3EA005B4AC1 /* ModalViewController.h */,
+				BF94487D199CC3EA005B4AC1 /* ModalViewController.m */,
+				BF94487E199CC3EA005B4AC1 /* TabBarController.h */,
+				BF94487F199CC3EA005B4AC1 /* TabBarController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF944835199CC36B005B4AC1 /* DynamicComponentsKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF944859199CC36B005B4AC1 /* Build configuration list for PBXNativeTarget "DynamicComponentsKit" */;
+			buildPhases = (
+				BF944832199CC36B005B4AC1 /* Sources */,
+				BF944833199CC36B005B4AC1 /* Frameworks */,
+				BF944834199CC36B005B4AC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicComponentsKit;
+			productName = DynamicComponentsKit;
+			productReference = BF944836199CC36B005B4AC1 /* DynamicComponentsKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF94484E199CC36B005B4AC1 /* DynamicComponentsKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF94485C199CC36B005B4AC1 /* Build configuration list for PBXNativeTarget "DynamicComponentsKitTests" */;
+			buildPhases = (
+				BF94484B199CC36B005B4AC1 /* Sources */,
+				BF94484C199CC36B005B4AC1 /* Frameworks */,
+				BF94484D199CC36B005B4AC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF944851199CC36B005B4AC1 /* PBXTargetDependency */,
+			);
+			name = DynamicComponentsKitTests;
+			productName = DynamicComponentsKitTests;
+			productReference = BF94484F199CC36B005B4AC1 /* DynamicComponentsKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF94482E199CC36B005B4AC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Radoslaw Szeja";
+				TargetAttributes = {
+					BF944835199CC36B005B4AC1 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					BF94484E199CC36B005B4AC1 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = BF944835199CC36B005B4AC1;
+					};
+				};
+			};
+			buildConfigurationList = BF944831199CC36B005B4AC1 /* Build configuration list for PBXProject "DynamicComponentsKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF94482D199CC36B005B4AC1;
+			productRefGroup = BF944837199CC36B005B4AC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF944835199CC36B005B4AC1 /* DynamicComponentsKit */,
+				BF94484E199CC36B005B4AC1 /* DynamicComponentsKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF944834199CC36B005B4AC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF944848199CC36B005B4AC1 /* Main.storyboard in Resources */,
+				BF94484A199CC36B005B4AC1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF94484D199CC36B005B4AC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF944832199CC36B005B4AC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF944871199CC3C8005B4AC1 /* TabChangeAnimator.m in Sources */,
+				BF944881199CC3EA005B4AC1 /* UIViewController+NavigationInteractivePopGesture.m in Sources */,
+				BF944884199CC3EA005B4AC1 /* ModalViewController.m in Sources */,
+				BF94486F199CC3C8005B4AC1 /* PresentAnimator.m in Sources */,
+				BF944870199CC3C8005B4AC1 /* PushAnimator.m in Sources */,
+				BF94486D199CC3C8005B4AC1 /* NavigationAnimator.m in Sources */,
+				BF944883199CC3EA005B4AC1 /* BaseViewController.m in Sources */,
+				BF944845199CC36B005B4AC1 /* SecondViewController.m in Sources */,
+				BF94486E199CC3C8005B4AC1 /* PopAnimator.m in Sources */,
+				BF94483F199CC36B005B4AC1 /* AppDelegate.m in Sources */,
+				BF944842199CC36B005B4AC1 /* FirstViewController.m in Sources */,
+				BF94483C199CC36B005B4AC1 /* main.m in Sources */,
+				BF94486C199CC3C8005B4AC1 /* DismissAnimator.m in Sources */,
+				BF944885199CC3EA005B4AC1 /* TabBarController.m in Sources */,
+				BF944880199CC3EA005B4AC1 /* UIViewController+ModalTransitioningDelegate.m in Sources */,
+				BF944882199CC3EA005B4AC1 /* UIViewController+NavigationTransitionDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF94484B199CC36B005B4AC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF944856199CC36B005B4AC1 /* DynamicComponentsKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF944851199CC36B005B4AC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF944835199CC36B005B4AC1 /* DynamicComponentsKit */;
+			targetProxy = BF944850199CC36B005B4AC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF944846199CC36B005B4AC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF944847199CC36B005B4AC1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF944857199CC36B005B4AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BF944858199CC36B005B4AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF94485A199CC36B005B4AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = DynamicComponentsKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF94485B199CC36B005B4AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = DynamicComponentsKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BF94485D199CC36B005B4AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DynamicComponentsKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DynamicComponentsKit.app/DynamicComponentsKit";
+			};
+			name = Debug;
+		};
+		BF94485E199CC36B005B4AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DynamicComponentsKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DynamicComponentsKit.app/DynamicComponentsKit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF944831199CC36B005B4AC1 /* Build configuration list for PBXProject "DynamicComponentsKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF944857199CC36B005B4AC1 /* Debug */,
+				BF944858199CC36B005B4AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF944859199CC36B005B4AC1 /* Build configuration list for PBXNativeTarget "DynamicComponentsKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF94485A199CC36B005B4AC1 /* Debug */,
+				BF94485B199CC36B005B4AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF94485C199CC36B005B4AC1 /* Build configuration list for PBXNativeTarget "DynamicComponentsKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF94485D199CC36B005B4AC1 /* Debug */,
+				BF94485E199CC36B005B4AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF94482E199CC36B005B4AC1 /* Project object */;
+}
