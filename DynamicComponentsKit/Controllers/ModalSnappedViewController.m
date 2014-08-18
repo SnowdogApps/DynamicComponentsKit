@@ -52,4 +52,10 @@
     }
 }
 
+- (void)unwindSelf:(id)sender
+{
+    [self.dynamicAnimator removeAllBehaviors];
+    [super unwindSelf:sender];
+}
+
 @end
