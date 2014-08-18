@@ -10,7 +10,6 @@
 		BF94483C199CC36B005B4AC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF94483B199CC36B005B4AC1 /* main.m */; };
 		BF94483F199CC36B005B4AC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF94483E199CC36B005B4AC1 /* AppDelegate.m */; };
 		BF944842199CC36B005B4AC1 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF944841199CC36B005B4AC1 /* FirstViewController.m */; };
-		BF944845199CC36B005B4AC1 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF944844199CC36B005B4AC1 /* SecondViewController.m */; };
 		BF944848199CC36B005B4AC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF944846199CC36B005B4AC1 /* Main.storyboard */; };
 		BF94484A199CC36B005B4AC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF944849199CC36B005B4AC1 /* Images.xcassets */; };
 		BF944856199CC36B005B4AC1 /* DynamicComponentsKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF944855199CC36B005B4AC1 /* DynamicComponentsKitTests.m */; };
@@ -51,8 +50,6 @@
 		BF94483E199CC36B005B4AC1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BF944840199CC36B005B4AC1 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		BF944841199CC36B005B4AC1 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		BF944843199CC36B005B4AC1 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		BF944844199CC36B005B4AC1 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BF944847199CC36B005B4AC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF944849199CC36B005B4AC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BF94484F199CC36B005B4AC1 /* DynamicComponentsKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicComponentsKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,8 +138,6 @@
 				BF94483E199CC36B005B4AC1 /* AppDelegate.m */,
 				BF944840199CC36B005B4AC1 /* FirstViewController.h */,
 				BF944841199CC36B005B4AC1 /* FirstViewController.m */,
-				BF944843199CC36B005B4AC1 /* SecondViewController.h */,
-				BF944844199CC36B005B4AC1 /* SecondViewController.m */,
 				BF944846199CC36B005B4AC1 /* Main.storyboard */,
 				BF944849199CC36B005B4AC1 /* Images.xcassets */,
 				BF944839199CC36B005B4AC1 /* Supporting Files */,
@@ -346,7 +341,6 @@
 				BF944870199CC3C8005B4AC1 /* PushAnimator.m in Sources */,
 				BF94486D199CC3C8005B4AC1 /* NavigationAnimator.m in Sources */,
 				BF944883199CC3EA005B4AC1 /* BaseViewController.m in Sources */,
-				BF944845199CC36B005B4AC1 /* SecondViewController.m in Sources */,
 				BF944896199D1E38005B4AC1 /* UIViewController+RootView.m in Sources */,
 				BF94486E199CC3C8005B4AC1 /* PopAnimator.m in Sources */,
 				BF94483F199CC36B005B4AC1 /* AppDelegate.m in Sources */,
