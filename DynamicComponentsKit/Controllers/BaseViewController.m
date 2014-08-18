@@ -9,7 +9,6 @@
 #import "BaseViewController.h"
 
 @interface BaseViewController ()
-@property (nonatomic, strong) UIPercentDrivenInteractiveTransition *interactivePopTransitionController;
 @end
 
 @implementation BaseViewController

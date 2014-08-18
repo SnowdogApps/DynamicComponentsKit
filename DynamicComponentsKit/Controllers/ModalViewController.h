@@ -23,4 +23,7 @@ typedef NS_ENUM(NSInteger, DismissMode) {
 @property (nonatomic, weak) IBOutlet UIView *mainView;
 @property (nonatomic) PresentationMode presentationMode;
 @property (nonatomic) DismissMode dismissMode;
+
+- (IBAction)unwindSelf:(id)sender;
+
 @end

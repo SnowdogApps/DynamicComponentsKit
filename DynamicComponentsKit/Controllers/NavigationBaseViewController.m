@@ -9,6 +9,7 @@
 #import "NavigationBaseViewController.h"
 
 @interface NavigationBaseViewController ()
+@property (nonatomic, strong) UIPercentDrivenInteractiveTransition *interactivePopTransitionController;
 @property (nonatomic, getter=isInteractive) BOOL interactive;
 @end
 
@@ -17,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     UIScreenEdgePanGestureRecognizer *recognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePopGesture:)];
     recognizer.edges = UIRectEdgeLeft;
     [self.view addGestureRecognizer:recognizer];
