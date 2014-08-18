@@ -19,20 +19,20 @@
     if ([toViewController isKindOfClass:[ModalViewController class]]) {
         ModalViewController *modalToViewController = (ModalViewController *)toViewController;
         
-        UIView *fromView = [self parentViewInController:fromViewController];
+        UIView *fromView = [fromViewController topRootView];
         
         CGFloat blurAlpha = modalToViewController.blurView.alpha;
         modalToViewController.blurView.alpha = 0.0;
         
-        CGPoint mainViewCenter = modalToViewController.mainView.center;
-        modalToViewController.mainView.center = CGPointMake(mainViewCenter.x, mainViewCenter.y - modalToViewController.mainView.frame.size.height);
-
-        [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+        CGPoint finalCenter = modalToViewController.mainView.center;
+        CGRect initialFrame = modalToViewController.mainView.frame;
+        initialFrame.origin.y = (modalToViewController.presentationMode == PresentationModeFromBottom) ? fromView.frame.size.height : -fromView.frame.size.height;
+        modalToViewController.mainView.frame = initialFrame;
         
         [UIView animateWithDuration:self.duration delay:0 usingSpringWithDamping:0.75 initialSpringVelocity:1.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             fromView.transform = CGAffineTransformMakeScale(0.9, 0.9);
             modalToViewController.blurView.alpha = blurAlpha;
-            modalToViewController.mainView.center = mainViewCenter;
+            modalToViewController.mainView.center = finalCenter;
         } completion:^(BOOL finished) {
             [transitionContext completeTransition:YES];
         }];

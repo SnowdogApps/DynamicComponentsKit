@@ -22,7 +22,6 @@
     CGPoint origFromCenter = fromViewController.view.center;
     CGPoint fromCenter = CGPointMake(origFromCenter.x - 0.3*fromViewController.view.frame.size.width, origFromCenter.y);
     
-    //usingSpringWithDamping:0.8 initialSpringVelocity:1.0
     [UIView animateWithDuration:self.duration delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         toViewController.view.center = finalToCenter;
         fromViewController.view.center = fromCenter;

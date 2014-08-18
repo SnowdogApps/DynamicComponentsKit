@@ -10,6 +10,7 @@
 
 @implementation UIViewController (NavigationInteractivePopGesture)
 @dynamic interactivePopTransitionController;
+@dynamic interactive;
 
 - (IBAction)handlePopGesture:(UIScreenEdgePanGestureRecognizer *)recognizer
 {
@@ -19,6 +20,7 @@
     NSLog(@"progress: %lf", progress);
     
     if (recognizer.state == UIGestureRecognizerStateBegan) {
+        self.interactive = YES;
         [self.navigationController popViewControllerAnimated:YES];
     }
     else if (recognizer.state == UIGestureRecognizerStateChanged) {
@@ -31,6 +33,8 @@
         else {
             [self.interactivePopTransitionController cancelInteractiveTransition];
         }
+        
+        self.interactive = NO;
     }
 }
 
