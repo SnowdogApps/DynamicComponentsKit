@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (NavigationInteractivePopGesture)
+@property (nonatomic, getter=isInteractive) BOOL interactive;
 @property (nonatomic, strong) UIPercentDrivenInteractiveTransition *interactivePopTransitionController;
 
 - (IBAction)handlePopGesture:(UIScreenEdgePanGestureRecognizer *)recognizer;

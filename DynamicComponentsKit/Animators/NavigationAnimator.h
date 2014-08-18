@@ -9,11 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "UIViewController+RootView.h"
+
 @interface NavigationAnimator : NSObject <UIViewControllerAnimatedTransitioning>
 
-@property (nonatomic) CGFloat duration;
-
 - (instancetype)initWithDuration:(CGFloat)duration;
-- (UIView *)parentViewInController:(UIViewController *)controller;
+
+@property (nonatomic, readonly) CGFloat duration;
 
 @end
