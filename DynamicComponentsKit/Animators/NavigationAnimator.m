@@ -14,7 +14,7 @@
 {
     self = [super init];
     if (self) {
-        self.duration = 0.25;
+        _duration = 0.25;
     }
     return self;
 }
@@ -24,9 +24,9 @@
     self = [super init];
     if (self) {
         if (duration > 0.0) {
-            self.duration = duration;
+            _duration = duration;
         } else {
-            self.duration = 0.25;
+            _duration = 0.25;
         }
     }
     return self;

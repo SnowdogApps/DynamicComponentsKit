@@ -13,9 +13,8 @@
 
 @interface NavigationAnimator : NSObject <UIViewControllerAnimatedTransitioning>
 
-@property (nonatomic) CGFloat duration;
-@property (nonatomic, strong) UIDynamicAnimator *dynamicAnimator;
-
 - (instancetype)initWithDuration:(CGFloat)duration;
+
+@property (nonatomic, readonly) CGFloat duration;
 
 @end

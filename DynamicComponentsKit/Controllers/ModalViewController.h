@@ -8,7 +8,19 @@
 
 #import "BaseViewController.h"
 
+typedef NS_ENUM(NSInteger, PresentationMode) {
+    PresentationModeFromBottom = 0,
+    PresentationModeFromTop
+};
+
+typedef NS_ENUM(NSInteger, DismissMode) {
+    DismissModeToBottom = 0,
+    DismissModeToTop
+};
+
 @interface ModalViewController : BaseViewController
-@property (nonatomic, weak) IBOutlet UIVisualEffectView *blurView;
+@property (nonatomic, weak) IBOutlet UIView *blurView;
 @property (nonatomic, weak) IBOutlet UIView *mainView;
+@property (nonatomic) PresentationMode presentationMode;
+@property (nonatomic) DismissMode dismissMode;
 @end

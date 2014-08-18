@@ -22,17 +22,17 @@
         
         toView.transform = CGAffineTransformMakeScale(0.9, 0.9);
         
-        CGPoint mainViewCenter = CGPointMake(modalFromViewController.mainView.center.x, modalFromViewController.mainView.center.y + modalFromViewController.view.frame.size.height);
+        CGRect finalFrame = modalFromViewController.mainView.frame;
+        finalFrame.origin.y = (modalFromViewController.dismissMode == DismissModeToBottom) ? toView.frame.size.height : -toView.frame.size.height;
         
         [UIView animateWithDuration:self.duration delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             toView.transform = CGAffineTransformMakeScale(1.0, 1.0);
             modalFromViewController.blurView.alpha = 0.0;
-            modalFromViewController.mainView.center = mainViewCenter;
+            modalFromViewController.mainView.frame = finalFrame;
         } completion:^(BOOL finished) {
             toView.transform = CGAffineTransformIdentity;
             [transitionContext completeTransition:YES];
         }];
-        
     }
 }
 

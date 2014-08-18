@@ -29,6 +29,8 @@
 		BF94488F199D1779005B4AC1 /* NavigationBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF94488E199D1779005B4AC1 /* NavigationBaseViewController.m */; };
 		BF944893199D19D7005B4AC1 /* ContainerWithShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = BF944892199D19D7005B4AC1 /* ContainerWithShadow.m */; };
 		BF944896199D1E38005B4AC1 /* UIViewController+RootView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF944895199D1E38005B4AC1 /* UIViewController+RootView.m */; };
+		BF944899199F744E005B4AC1 /* ModalSnappedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF944898199F744E005B4AC1 /* ModalSnappedViewController.m */; };
+		BF94489C19A0A787005B4AC1 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF94489B19A0A787005B4AC1 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,10 @@
 		BF944892199D19D7005B4AC1 /* ContainerWithShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerWithShadow.m; sourceTree = "<group>"; };
 		BF944894199D1E38005B4AC1 /* UIViewController+RootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RootView.h"; sourceTree = "<group>"; };
 		BF944895199D1E38005B4AC1 /* UIViewController+RootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RootView.m"; sourceTree = "<group>"; };
+		BF944897199F744E005B4AC1 /* ModalSnappedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalSnappedViewController.h; sourceTree = "<group>"; };
+		BF944898199F744E005B4AC1 /* ModalSnappedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalSnappedViewController.m; sourceTree = "<group>"; };
+		BF94489A19A0A787005B4AC1 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		BF94489B19A0A787005B4AC1 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +221,10 @@
 				BF94487F199CC3EA005B4AC1 /* TabBarController.m */,
 				BF94488D199D1779005B4AC1 /* NavigationBaseViewController.h */,
 				BF94488E199D1779005B4AC1 /* NavigationBaseViewController.m */,
+				BF944897199F744E005B4AC1 /* ModalSnappedViewController.h */,
+				BF944898199F744E005B4AC1 /* ModalSnappedViewController.m */,
+				BF94489A19A0A787005B4AC1 /* TableViewController.h */,
+				BF94489B19A0A787005B4AC1 /* TableViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -329,6 +339,7 @@
 			files = (
 				BF944871199CC3C8005B4AC1 /* TabChangeAnimator.m in Sources */,
 				BF94488F199D1779005B4AC1 /* NavigationBaseViewController.m in Sources */,
+				BF944899199F744E005B4AC1 /* ModalSnappedViewController.m in Sources */,
 				BF944881199CC3EA005B4AC1 /* UIViewController+NavigationInteractivePopGesture.m in Sources */,
 				BF944884199CC3EA005B4AC1 /* ModalViewController.m in Sources */,
 				BF94486F199CC3C8005B4AC1 /* PresentAnimator.m in Sources */,
@@ -345,6 +356,7 @@
 				BF94486C199CC3C8005B4AC1 /* DismissAnimator.m in Sources */,
 				BF944885199CC3EA005B4AC1 /* TabBarController.m in Sources */,
 				BF944880199CC3EA005B4AC1 /* UIViewController+ModalTransitioningDelegate.m in Sources */,
+				BF94489C19A0A787005B4AC1 /* TableViewController.m in Sources */,
 				BF944882199CC3EA005B4AC1 /* UIViewController+NavigationTransitionDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
